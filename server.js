@@ -1,9 +1,10 @@
 const express = require('express');
 
 let app = express();
+let port = process.env.PORT || 8080;
 
-app.listen(3000, function() {
-	console.log("listening on 3000");
+app.listen(port, function() {
+	
 })
 
 app.get('/', function(req, res) {
