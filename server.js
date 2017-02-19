@@ -12,6 +12,6 @@ app.listen(port, function() {
 
 app.get('/', function(req, res) {
 	console.log(req.url);
-	res.sendFile(__dirname + '/public/index.html');
+	res.sendFile(__dirname + '/index.html');
 	res.status(200);
 })
