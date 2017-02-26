@@ -15,3 +15,10 @@ app.get('/', function(req, res) {
 	res.sendFile(__dirname + '/index.html');
 	res.status(200);
 })
+
+
+app.get('/thanks', function(req, res) {
+	console.log(req.url);
+	res.sendFile(__dirname + '/thanks.html');
+	res.status(200);
+})
